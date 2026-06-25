@@ -332,6 +332,37 @@ a {
   background: linear-gradient(180deg, #fff, #f8fbff);
 }
 
+.supports-scroll-reveal .animated-content {
+  visibility: hidden;
+  opacity: var(--reveal-opacity, 0);
+  transform: translate3d(var(--reveal-x, 0), var(--reveal-y, 0), 0) scale(var(--reveal-scale, 1));
+  transition:
+    opacity var(--reveal-duration, 0.8s) cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 0s),
+    transform var(--reveal-duration, 0.8s) cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 0s),
+    visibility 0s linear var(--reveal-delay, 0s);
+  will-change: opacity, transform;
+}
+
+.supports-scroll-reveal .animated-content.is-visible {
+  visibility: visible;
+  opacity: 1;
+  transform: translate3d(0, 0, 0) scale(1);
+}
+
+.supports-scroll-reveal .animated-stagger {
+  opacity: 0;
+  transform: translate3d(0, 22px, 0);
+  transition:
+    opacity 0.72s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.72s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.supports-scroll-reveal .animated-content.is-visible .animated-stagger {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition-delay: calc(var(--stagger-index, 0) * 0.12s + var(--reveal-delay, 0s) + 0.1s);
+}
+
 .pillar {
   min-height: 220px;
   padding: 44px 42px;
