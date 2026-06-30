@@ -9,9 +9,10 @@
       content="连云港蓝科包装制品有限公司成立于2021年10月，是一家以瓦楞纸板为主要原料，生产各种规格、品质、尺寸瓦楞纸箱及配套包装的专业生产企业。"
     />
     <link rel="icon" type="image/png" href="assets/lanke-logo-mark.png" />
-    <link rel="stylesheet" href="styles.css?v=20260629a" />
+    <link rel="stylesheet" href="styles.css?v=20260630c" />
   </head>
   <body>
+    <a class="skip-link" href="#about">跳转到主要内容</a>
     <header class="site-header" data-header>
       <a class="brand" href="#top" aria-label="连云港蓝科包装制品有限公司首页">
         <img class="brand-logo" src="assets/lanke-logo-mark.png" alt="" />
@@ -37,7 +38,8 @@
       <section class="hero section-pad" aria-labelledby="hero-title">
         <div class="hero-bg" aria-hidden="true"></div>
         <div class="container hero-content">
-          <div class="hero-copy">
+          <div class="hero-copy" data-reveal>
+            <p class="hero-eyebrow">Modern corrugated packaging manufacturer</p>
             <h1 id="hero-title"><span>专业瓦楞纸箱</span><span>生产厂家</span></h1>
             <p class="hero-subtitle">纸箱生产 · 配套包装 · 稳定交付</p>
             <p class="hero-text">
@@ -47,13 +49,27 @@
               <a class="button primary" href="#contact">联系我们</a>
               <a class="button secondary" href="#solutions">查看包装方案</a>
             </div>
+            <dl class="hero-metrics" aria-label="蓝科包装核心能力">
+              <div>
+                <dt>生产设备</dt>
+                <dd>十余台</dd>
+              </div>
+              <div>
+                <dt>服务场景</dt>
+                <dd>工业 / 食品 / 冷链</dd>
+              </div>
+              <div>
+                <dt>合作模式</dt>
+                <dd>打样到量产</dd>
+              </div>
+            </dl>
           </div>
         </div>
       </section>
 
       <section class="about section-pad" id="about" aria-labelledby="about-title">
         <div class="container split-layout">
-          <div class="section-copy">
+          <div class="section-copy" data-reveal>
             <p class="section-label">ABOUT LANKE</p>
             <h2 id="about-title">连云港蓝科包装制品有限公司</h2>
             <p>
@@ -69,66 +85,71 @@
               </div>
               <div>
                 <dt>年销售额</dt>
-                <dd>500万</dd>
+                <dd><span class="count-up" data-count="500">0</span><span>万</span></dd>
               </div>
               <div>
                 <dt>现有职工</dt>
-                <dd>9人</dd>
+                <dd><span class="count-up" data-count="9">0</span><span>人</span></dd>
               </div>
               <div>
                 <dt>管理人员</dt>
-                <dd>3人</dd>
+                <dd><span class="count-up" data-count="3">0</span><span>人</span></dd>
               </div>
             </dl>
           </div>
-          <figure class="image-frame about-image">
-            <img src="assets/factory-building.jpg" alt="现代化纸箱包装企业厂房与装货区域" />
+          <figure class="image-frame about-image" data-reveal>
+            <img src="assets/facility-exterior.jpg" alt="现代化包装企业厂房外观与装卸月台" />
           </figure>
         </div>
       </section>
 
       <section class="capability section-pad" id="capability" aria-labelledby="capability-title">
         <div class="container capability-layout">
-          <div class="section-copy">
+          <div class="section-copy" data-reveal>
             <p class="section-label">PRODUCTION CAPABILITY</p>
             <h2 id="capability-title">完整生产线与后道加工能力</h2>
             <p>
               公司配备十余台专业纸箱生产及后道加工设备，覆盖开槽、模切、打钉、粘胶、分纸等关键工序，能够配合常规纸箱、异形箱、食品级专用箱及防潮箱等不同需求。
             </p>
           </div>
-          <div class="equipment-panel" aria-label="主要生产设备">
-            <article>
-              <span>01</span>
-              <h3>开槽与印刷</h3>
-              <p>四色高速水墨开槽圆模机，适配纸箱成型及印刷需求。</p>
-            </article>
-            <article>
-              <span>02</span>
-              <h3>模切成型</h3>
-              <p>高速平压平模切机、高速圆压圆模切机，支持异形结构加工。</p>
-            </article>
-            <article>
-              <span>03</span>
-              <h3>钉箱与粘箱</h3>
-              <p>全自动打钉机、半自动打钉机、全自动高速粘胶机，保障后道效率。</p>
-            </article>
-            <article>
-              <span>04</span>
-              <h3>分纸与配套</h3>
-              <p>分纸机及配套设备协同生产，满足不同规格瓦楞纸箱加工。</p>
-            </article>
+          <div class="capability-stack">
+            <figure class="image-frame capability-image" data-reveal>
+              <img src="assets/corrugator-line.jpg" alt="瓦楞纸板生产线与纸箱成品" />
+            </figure>
+            <div class="equipment-panel card-grid" aria-label="主要生产设备" data-reveal>
+              <article>
+                <span>01</span>
+                <h3>开槽与印刷</h3>
+                <p>四色高速水墨开槽圆模机，适配纸箱成型及印刷需求。</p>
+              </article>
+              <article>
+                <span>02</span>
+                <h3>模切成型</h3>
+                <p>高速平压平模切机、高速圆压圆模切机，支持异形结构加工。</p>
+              </article>
+              <article>
+                <span>03</span>
+                <h3>钉箱与粘箱</h3>
+                <p>全自动打钉机、半自动打钉机、全自动高速粘胶机，保障后道效率。</p>
+              </article>
+              <article>
+                <span>04</span>
+                <h3>分纸与配套</h3>
+                <p>分纸机及配套设备协同生产，满足不同规格瓦楞纸箱加工。</p>
+              </article>
+            </div>
           </div>
         </div>
       </section>
 
       <section class="quality-strip" id="quality" aria-labelledby="quality-title">
         <div class="container">
-          <div class="section-heading centered quality-heading">
+          <div class="section-heading centered quality-heading" data-reveal>
             <p class="section-label">QUALITY MANAGEMENT</p>
             <h2 id="quality-title">以标准规范质量管理</h2>
             <p>以质量手册要求和相关标准规范企业质量管理行为，重质量、重信誉。</p>
           </div>
-          <div class="pillars">
+          <div class="pillars card-grid" data-reveal>
             <article class="pillar">
               <svg viewBox="0 0 48 48" aria-hidden="true">
                 <path d="M24 5 40 11v11c0 10.5-6.2 17.1-16 21-9.8-3.9-16-10.5-16-21V11L24 5Z" />
@@ -160,17 +181,17 @@
 
       <section class="solutions section-pad" id="solutions" aria-labelledby="solutions-title">
         <div class="container">
-          <div class="section-heading centered">
+          <div class="section-heading centered" data-reveal>
             <p class="section-label">PACKAGING SOLUTIONS</p>
             <h2 id="solutions-title">产品与包装解决方案</h2>
             <p>多种结构与材质选择，满足不同行业与场景的包装需求。</p>
           </div>
 
           <div class="solution-showcase">
-            <figure class="image-frame solution-image">
-              <img src="assets/packaging-solutions.jpg" alt="多种瓦楞纸箱、快递纸箱、隔板纸箱与重型包装箱" />
+            <figure class="image-frame solution-image" data-reveal>
+              <img src="assets/product-box-showcase.jpg" alt="多种瓦楞纸箱、隔板纸箱、托盘纸箱与成品包装" />
             </figure>
-            <div class="solution-list" aria-label="主营纸箱包装方案">
+            <div class="solution-list card-grid" aria-label="主营纸箱包装方案" data-reveal>
               <article>
                 <span>01</span>
                 <h3>各类瓦楞纸箱定制</h3>
@@ -208,14 +229,14 @@
 
       <section class="partners section-pad" aria-labelledby="partners-title">
         <div class="container partners-layout">
-          <div class="section-copy">
+          <div class="section-copy" data-reveal>
             <p class="section-label">APPLICATION CASES</p>
             <h2 id="partners-title">覆盖多行业合作应用</h2>
             <p>
               蓝科包装制品已服务碳纤维、纺织出口、玻璃、紫菜食品、海鲜冷链等不同包装需求，能够根据产品属性和使用环境，匹配更合适的纸箱结构与工艺。
             </p>
           </div>
-          <div class="partner-list" aria-label="合作伙伴与应用场景">
+          <div class="partner-list card-grid" aria-label="合作伙伴与应用场景" data-reveal>
             <article>
               <h3>工业材料包装</h3>
               <p>中复神鹰碳纤维股份有限公司等工业客户包装配套。</p>
@@ -238,13 +259,13 @@
 
       <section class="service section-pad" id="process" aria-labelledby="process-title">
         <div class="container">
-          <div class="section-heading centered">
+          <div class="section-heading centered" data-reveal>
             <p class="section-label">SERVICE PROCESS</p>
             <h2 id="process-title">服务流程</h2>
             <p>标准化服务流程，确保项目沟通清晰、打样确认准确、批量交付稳定。</p>
           </div>
 
-          <ol class="timeline">
+          <ol class="timeline" data-timeline data-reveal>
             <li>
               <span>01</span>
               <h3>需求沟通</h3>
@@ -276,15 +297,48 @@
 
       <section class="contact" id="contact" aria-labelledby="contact-title">
         <div class="contact-bg" aria-hidden="true"></div>
-        <div class="container contact-content">
+        <div class="container contact-content" data-reveal>
           <div>
             <h2 id="contact-title">瓦楞纸箱需求，找蓝科包装制品</h2>
             <p>如需瓦楞纸箱、异形箱、食品级专用箱、防潮箱或长期配套包装合作，欢迎联系我们沟通规格、工艺和交期。</p>
           </div>
-          <address class="contact-card">
-            <a href="tel:15161306333">电话：15161306333</a>
-            <span>微信：15161306333（同号）</span>
-            <span>地址：江苏省连云港市海州区南极南路 73 号</span>
+          <address class="contact-card" aria-label="联系方式">
+            <a class="contact-item" href="tel:15161306333">
+              <span class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path d="M7.4 4.8 9.2 4c.8-.3 1.7 0 2.1.8l1 2c.3.7.2 1.5-.4 2l-.9.8a11.7 11.7 0 0 0 3.4 3.4l.8-.9c.5-.6 1.3-.7 2-.4l2 1c.8.4 1.1 1.3.8 2.1l-.8 1.8c-.4.8-1.2 1.3-2.1 1.2C10.9 17.1 6.9 13.1 6.2 6.9c-.1-.9.4-1.7 1.2-2.1Z" />
+                </svg>
+              </span>
+              <span class="contact-meta">
+                <span class="contact-label">电话</span>
+                <span class="contact-value">15161306333</span>
+              </span>
+            </a>
+            <div class="contact-item">
+              <span class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path d="M10.8 7.1c-4 0-7.2 2.5-7.2 5.5 0 1.7 1 3.2 2.7 4.2l-.4 2 2.4-1.2c.8.2 1.6.4 2.5.4 4 0 7.2-2.5 7.2-5.4s-3.2-5.5-7.2-5.5Z" />
+                  <path d="M14.4 5.1c3.4.5 6 2.7 6 5.3 0 1.3-.6 2.5-1.7 3.5l.3 1.7-2-1" />
+                  <path d="M8.2 12h.1M13 12h.1" />
+                </svg>
+              </span>
+              <span class="contact-meta">
+                <span class="contact-label">微信</span>
+                <span class="contact-value">15161306333（同号）</span>
+              </span>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path d="M12 21s6-5.1 6-10.2A6 6 0 0 0 6 10.8C6 15.9 12 21 12 21Z" />
+                  <path d="M12 13.1a2.2 2.2 0 1 0 0-4.4 2.2 2.2 0 0 0 0 4.4Z" />
+                </svg>
+              </span>
+              <span class="contact-meta">
+                <span class="contact-label">地址</span>
+                <span class="contact-value">江苏省连云港市海州区南极南路 73 号</span>
+              </span>
+            </div>
           </address>
         </div>
       </section>
@@ -300,6 +354,6 @@
       </div>
     </footer>
 
-    <script src="script.js?v=20260629a"></script>
+    <script src="script.js?v=20260630a"></script>
   </body>
 </html>
