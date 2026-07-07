@@ -1094,10 +1094,31 @@ a {
   text-align: right;
 }
 
+.footer-records {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 8px 14px;
+}
+
 .footer-legal a {
   color: rgba(255, 255, 255, 0.72);
   font-size: 13px;
   transition: color 0.2s ease;
+}
+
+.gongan-record {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.gongan-record img {
+  width: 16px;
+  height: 18px;
+  object-fit: contain;
+  flex: 0 0 auto;
 }
 
 .footer-legal a:hover,
@@ -1309,6 +1330,10 @@ a {
   .footer-legal {
     justify-items: start;
     text-align: left;
+  }
+
+  .footer-records {
+    justify-content: flex-start;
   }
 }
 
